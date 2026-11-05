@@ -1,3 +1,16 @@
+[project]
+name = "hireai-backend"
+version = "1.0.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "joblib",
+    "pypdf",
+    "python-multipart"
+]
 
 [tool.vercel]
 entrypoint = "src.api:app"
