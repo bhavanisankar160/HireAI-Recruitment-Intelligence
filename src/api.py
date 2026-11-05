@@ -38,14 +38,18 @@ app.add_middleware(
 
 # ---------- Load datasets ----------
 
-try:
-    candidates = pd.read_csv(ROOT / "data" / "candidate_profiles.csv")
-    jobs = pd.read_csv(ROOT / "data" / "jobs.csv")
+jobs_path = ROOT / "data" / "jobs.csv"
+candidates_path = ROOT / "data" / "candidate_profiles.csv"
 
-except FileNotFoundError as exc:
-    raise RuntimeError(
-        "Missing candidate_profiles.csv or jobs.csv in the data folder."
-    ) from exc
+if not jobs_path.exists():
+    raise RuntimeError("Missing jobs.csv in the data folder.")
+
+jobs = pd.read_csv(jobs_path)
+
+if candidates_path.exists():
+    candidates = pd.read_csv(candidates_path)
+else:
+    candidates = pd.DataFrame()
 
 
 # ---------- Request schemas ----------
