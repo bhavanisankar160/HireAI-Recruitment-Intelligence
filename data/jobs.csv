@@ -1,0 +1,10 @@
+
+job_id,title,description,required_skills
+1,Machine Learning Engineer,"Build machine learning models and deploy predictive systems","Python, machine learning, pandas, scikit-learn, docker"
+2,Data Analyst,"Analyze business data and create reports and dashboards","Python, SQL, Excel, pandas, Power BI"
+3,Backend Developer,"Build backend services and REST APIs","Python, Java, SQL, FastAPI, PostgreSQL, Docker"
+4,NLP Engineer,"Develop text processing and natural language processing systems","Python, NLP, machine learning, transformers"
+5,Cloud Engineer,"Deploy and maintain scalable cloud infrastructure","AWS, Docker, Kubernetes, Linux, networking"
+6,Data Scientist,"Analyze data and build predictive machine learning models","Python, SQL, pandas, statistics, machine learning"
+7,Frontend Developer,"Develop responsive web applications and user interfaces","HTML, CSS, JavaScript, React"
+8,ML Platform Engineer,"Build automated model training and deployment pipelines","Python, Docker, MLflow, Kubernetes, AWS"

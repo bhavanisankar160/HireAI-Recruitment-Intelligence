@@ -1,0 +1,25 @@
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node
+node_modules/
+**/node_modules/
+frontend/dist/
+
+# Environment variables
+.env
+.env.*
+
+# Private datasets
+data/candidate_profiles.csv
+data/cleaned_resumes.csv
+data/Resume.csv
+
+# IDE and temporary files
+.vscode/
+*.log
+.DS_Store
