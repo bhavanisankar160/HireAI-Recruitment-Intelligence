@@ -125,19 +125,16 @@ def parse_skills(value):
 
 
 # ---------- Validate datasets ----------
-
-if candidates.empty:
-    raise RuntimeError("candidate_profiles.csv contains no candidates.")
-
 if jobs.empty:
     raise RuntimeError("jobs.csv contains no jobs.")
 
-candidate_columns = {"ID", "Category", "skills"}
+if not candidates.empty:
+    candidate_columns = {"ID", "Category", "skills"}
 
-if not candidate_columns.issubset(candidates.columns):
-    raise RuntimeError(
-        f"Candidate dataset must contain: {sorted(candidate_columns)}"
-    )
+    if not candidate_columns.issubset(candidates.columns):
+        raise RuntimeError(
+            f"Candidate dataset must contain: {sorted(candidate_columns)}"
+        )
 
 job_columns = {"job_id", "title", "required_skills"}
 
