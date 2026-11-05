@@ -3,7 +3,7 @@ import "./App.css";
 import { Bar } from "react-chartjs-2";
 import "chart.js/auto";
 import { jsPDF } from "jspdf";
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://hire-ai-recruitment-intelligence-9n.vercel.app";
 
 function App() {
   const [uploadData, setUploadData] = useState(null);
